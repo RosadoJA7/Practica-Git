@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    /*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;*/
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #FF5C29;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+    /*align-content: space-around;*/
+}
+.hijo{
+    background: #00B285;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    /*flex-grow: 1;
+    flex-shrink: 0;*/
+    flex: 1 1 auto;
+}
+.otro{
+    background: #00B285;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    align-self: stretch;
+    height:auto;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header{
+    background:url(imagenes/2.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: rgba(0, 0, 0, .1);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 60px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255, .5);
+    }
+    .logo{
+        /*background: #ea5455;*/
+        flex: 1 1 auto;
+        /*height: 30px;*/
+    }
+        .logo a{
+            color: #fff;
+            font-size: 30px;
+        }
+        .logo a:hover{
+            color: #343434;
+        }   
+    .nav{
+        /*background: #ea5455;*/
+        flex: 5 1 auto;
+        /*height: 30px;*/
+    }
+    .nav a{
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+    }
+    .nav a:hover{
+        color: #343434;
+
+    }
+    .social{
+        /*background: #ea5455;*/
+        flex:1 1 auto;
+        /*height: 30px;*/
+        display: flex;
+    }
+        .social a{
+            font-size: 18px;
+            color: #fff;
+            padding: 0 5px;
+        }
+        .social a:hover{
+            color: #343434;
+    .texto-principal{
+        background: #f07b3f;
+    }
+    h1{
+        background: #ffd460;
+    }
